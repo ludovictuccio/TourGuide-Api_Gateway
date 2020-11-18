@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: microservice-users
+        uri: http://localhost:9001/
+        predicates:
+        - Path=/user/**
+      - id: microservice-gps
+        uri: http://localhost:9002/
+        predicates:
+        - Path=/gps/**
+      - id: microservice-rewards
+        uri: http://localhost:9003/
+        predicates:
+        - Path=/rewards/**
+        
