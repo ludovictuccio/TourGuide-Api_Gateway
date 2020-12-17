@@ -1,0 +1,10 @@
+FROM openjdk:11
+
+ADD . /app/
+WORKDIR /app
+RUN ./gradlew build
+
+EXPOSE 8080
+VOLUME /app/logs
+
+CMD ["java""]x -y
