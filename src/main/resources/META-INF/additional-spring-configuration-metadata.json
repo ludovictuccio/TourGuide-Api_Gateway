@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "proxy.users",
+    "type": "java.lang.String",
+    "description": "A description for 'proxy.users'"
+  },
+  {
+    "name": "proxy.gps",
+    "type": "java.lang.String",
+    "description": "A description for 'proxy.gps'"
+  },
+  {
+    "name": "proxy.rewards",
+    "type": "java.lang.String",
+    "description": "A description for 'proxy.rewards'"
+  }
+]}

@@ -4,10 +4,10 @@ com/tourGuide/apiGateway/ApiGatewayApplication.java
  com.tourGuide.apiGateway.ApiGatewayApplication
 com/tourGuide/apiGateway/filters/LoggingGlobalPreFilter.java
  com.tourGuide.apiGateway.filters.LoggingGlobalPreFilter
-com/tourGuide/apiGateway/config/GatewayDiscoveryConfiguration.java
- com.tourGuide.apiGateway.config.GatewayDiscoveryConfiguration
+com/tourGuide/apiGateway/filters/FirstPreLastPostGlobalFilter.java
+ com.tourGuide.apiGateway.filters.FirstPreLastPostGlobalFilter
 com/tourGuide/apiGateway/filters/LoggingGatewayFilterFactory.java
  com.tourGuide.apiGateway.filters.LoggingGatewayFilterFactory
  com.tourGuide.apiGateway.filters.LoggingGatewayFilterFactory$Config
-com/tourGuide/apiGateway/filters/FirstPreLastPostGlobalFilter.java
- com.tourGuide.apiGateway.filters.FirstPreLastPostGlobalFilter
+com/tourGuide/apiGateway/config/GatewayDiscoveryConfiguration.java
+ com.tourGuide.apiGateway.config.GatewayDiscoveryConfiguration

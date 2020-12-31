@@ -12,17 +12,17 @@ spring:
     gateway:     
       routes:
       - id: microservice-users
-        uri: http://localhost:9001/
+        uri: "${proxy.users}"
         predicates:
         - Path=/user/**
 
       - id: microservice-gps
-        uri: http://localhost:9002/
+        uri: "${proxy.gps}"
         predicates:
         - Path=/gps/**
 
       - id: microservice-rewards
-        uri: http://localhost:9003/
+        uri: "${proxy.rewards}"
         predicates:
         - Path=/rewards/**
 

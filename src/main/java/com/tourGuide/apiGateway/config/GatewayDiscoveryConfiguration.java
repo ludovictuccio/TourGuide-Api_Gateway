@@ -1,6 +1,7 @@
 package com.tourGuide.apiGateway.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
@@ -17,9 +18,14 @@ public class GatewayDiscoveryConfiguration {
     @Autowired
     private LoggingGatewayFilterFactory loggingFactory;
 
-    private static final String URI_MICROSERVICE_USER_9001 = "http://localhost:9001/";
-    private static final String URI_MICROSERVICE_GPS_9002 = "http://localhost:9002/";
-    private static final String URI_MICROSERVICE_REWARDS_9003 = "http://localhost:9003/";
+    @Value("${proxy.users}")
+    public String URI_MICROSERVICE_USER_9001;
+
+    @Value("${proxy.gps}")
+    public String URI_MICROSERVICE_GPS_9002;
+
+    @Value("${proxy.rewards}")
+    public String URI_MICROSERVICE_REWARDS_9003;
 
     @Bean
     public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
